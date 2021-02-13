@@ -6,8 +6,8 @@ export const Container = styled.section`
 `;
 
 export const Frame = styled.div`
-    margin: 0 auto 10px auto;
-    width: 600px;
+    margin-bottom: 10px;
+    max-width: 1200px;
 `;
 
 export const Inner = styled.div`
