@@ -6,7 +6,7 @@ export const Container = styled.section`
 `;
 
 export const Frame = styled.div`
-    margin-bottom: 10px;
+    margin: 0 auto 10px auto;
     width: 600px;
 `;
 
