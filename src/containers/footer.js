@@ -8,7 +8,7 @@ export function FooterContainer() {
             <Footer.Break/>
             <Footer.Row>
                 <Footer.Column>
-                    <Footer.Link href="#">FAQ</Footer.Link>
+                    <Footer.Link href="#">FAQs</Footer.Link>
                     <Footer.Link href="#">Investor Relations</Footer.Link>
                     <Footer.Link href="#">Ways to Watch</Footer.Link>
                     <Footer.Link href="#">Corpate Info</Footer.Link>
@@ -26,7 +26,7 @@ export function FooterContainer() {
                     <Footer.Link href="#">Your Account</Footer.Link>
                     <Footer.Link href="#">Redeem Gifts</Footer.Link>
                     <Footer.Link href="#">Privacy</Footer.Link>
-                    <Footer.Link href="#">Act on Spec. Commercial Transactions</Footer.Link>
+                    <Footer.Link href="#">Commercial Transactions</Footer.Link>
                 </Footer.Column>
 
                 <Footer.Column>
