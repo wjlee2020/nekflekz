@@ -50,4 +50,3 @@ Accordion.Body = function AccordionBody({children, ...restOfProps}) {
 
     return toggleShow ? <Body {...restOfProps}>{children}</Body> : null;
 }
-
