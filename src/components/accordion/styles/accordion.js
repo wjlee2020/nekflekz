@@ -14,7 +14,7 @@ export const Inner = styled.div`
     display: flex;
     padding: 70px 45px;
     flex-direction: column;
-    max-width: 600px;
+    max-width: 815px;
     margin: auto;
 `;
 
@@ -67,7 +67,6 @@ export const Header = styled.p`
 `;
 
 export const Body = styled.div`
-    border: 1px solid magenta;
     box-sizing: border-box;
     transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
     font-size: 26px;
