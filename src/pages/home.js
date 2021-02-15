@@ -4,7 +4,8 @@ import {FaqsContainer} from '../containers/faqs'
 import {JumbotronContainer} from '../containers/jumbotron';
 import {FooterContainer} from '../containers/footer'
 import {HeaderContainer} from '../containers/header'
-export function Home() {
+
+export default function Home() {
     return (
         <>
             <HeaderContainer>
