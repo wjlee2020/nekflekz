@@ -7,6 +7,8 @@ export default function Signin() {
     const [emailAddress, setEmailAddress] = useState('');
     const [password, setPassword] = useState('');
     
+    const isDisabled = emailAddress === '' | password === '';
+
     const handleSignin = e => {
         e.preventDefault();
         // call firebase to auth
@@ -21,11 +23,13 @@ export default function Signin() {
 
                 <Form.Base onSubmit={handleSignin} method="POST">
                     <Form.Input 
+                        required
                         placeholder="Email Address"
                         value={emailAddress}
                         onChange={({target}) => setEmailAddress(target.value)}
                     />
                     <Form.Input 
+                        required
                         type="password"
                         value={password}
                         autoComplete="off"
@@ -34,7 +38,7 @@ export default function Signin() {
                     />
                     <Form.Submit 
                         type="submit"
-                        disabled={false}>
+                        disabled={isDisabled}>
                         Sign In
                     </Form.Submit>
                     <Form.Text>
