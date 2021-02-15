@@ -13,6 +13,7 @@ export const Container = styled.section`
     max-width: 450px;
     padding: 60px 68px 40px;
     margin-bottom: 100px;
+    border: 1px magenta solid;
 `;
 
 export const Base = styled.form`

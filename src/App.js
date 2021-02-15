@@ -1,7 +1,7 @@
 import React from 'react';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import * as ROUTES from './constants/routes';
-import {Home, Signin} from './pages';
+import {Home, Signin, Signup} from './pages';
 
 
 export function App() {
@@ -13,7 +13,7 @@ export function App() {
         </Route>
 
         <Route exact path= {ROUTES.SIGN_UP}>
-          <p>signup page</p>
+          <Signup />
         </Route>
         
         <Route exact path={ROUTES.BROWSE}>
