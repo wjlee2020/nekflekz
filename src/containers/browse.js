@@ -9,7 +9,7 @@ export function BrowseContainer() {
     const [profile, setProfile] = useState({})
     const user = {
         displayName: "Paul",
-        photoUrl: "1"
+        photoURL: "1"
     };
 
     return profile.displayName ? (
@@ -17,5 +17,5 @@ export function BrowseContainer() {
             <p>Browse container</p>
             <FooterContainer/> )
         </> )
-            : (<SelectProfileContainer />)
+            : (<SelectProfileContainer user={user} setProfile={setProfile} />)
 }
