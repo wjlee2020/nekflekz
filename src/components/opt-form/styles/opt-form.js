@@ -18,14 +18,14 @@ export const Input = styled.input`
     width: 100%;
     border: 0;
     padding: 10px;
-    height: 70px;
+    height: 60px;
     box-sizing: border-box;
 `;
 
 export const Button = styled.button`
     display: flex;
     align-items: center;
-    height: 70px;
+    height: 60.5px;
     background: #e50914;
     color: white;
     text-transform: uppercase;
@@ -57,5 +57,12 @@ export const Button = styled.button`
 `;
 
 export const Text = styled.p`
-    font
+    font-size: 19px;
+    color: white;
+    text-align: center;
+
+    @media (max-width: 600px) {
+        font-size: 16px;
+        line-height: 22px;
+    }
 `;
