@@ -1,6 +1,20 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Link as ReachRouterLink} from 'react-router-dom';
-import {Group, Background, Link, Text, Container, Logo, ButtonLink, Feature, FeatureCallOut, PlayButton} from './styles/header';
+import {
+    Group, 
+    Background, 
+    Link, 
+    Text, 
+    Container, 
+    Logo, 
+    ButtonLink, 
+    Feature, 
+    FeatureCallOut, 
+    PlayButton,
+    Search,
+    SearchIcon,
+    SearchInput
+    } from './styles/header';
 
 export default function Header({ bg = true, children, ...restProps }) {
     return bg ? <Background {...restProps}>{children}</Background> : children;
@@ -44,4 +58,22 @@ Header.FeatureCallOut = function HeaderFeatureCallOut({ children, ...restOfProps
 
 Header.PlayButton = function HeaderPlayButton({ children, ...restOfProps}) {
     return <PlayButton {...restOfProps}>{children}</PlayButton>
+}
+
+Header.Search = function HeaderSearch({ searchTerm, setSearchTerm, ...restOfProps}) {
+    const [searchActive, setSearchActive] = useState(false)
+    return (
+        <Search {...restOfProps}>
+            <SearchIcon 
+                onClick={() => setSearchActive(!searchActive)}>
+                <img src="/images/icons/search.png" alt="search" />
+            </SearchIcon>
+            <SearchInput 
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                placeholder="search shows and movies"
+                active={searchActive}
+            />
+        </Search>
+    )
 }
