@@ -35,8 +35,10 @@ export function BrowseContainer() {
                             Movies
                         </Header.Link>
                     </Header.Group>
+                    <Header.Group>
+                        <Header.Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+                    </Header.Group>
 
-                    <Header.Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
                 </Header.Frame>
                 
                 <Header.Feature>
