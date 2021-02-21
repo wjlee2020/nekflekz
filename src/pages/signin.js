@@ -27,8 +27,8 @@ export default function Signin() {
                 setPassword('');
                 setError('');
                 history.push(ROUTES.BROWSE);
-                // if error, pop error state
-            }).catch(error => setError(error.message))
+            })
+            .catch((error) => setError(error.message));
     }
 
     return (
