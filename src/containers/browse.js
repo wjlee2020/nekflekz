@@ -40,12 +40,12 @@ export function BrowseContainer({slides}) {
                         <Header.Link 
                             active={category === 'series' ? 'true' : 'false'}
                             onClick={() => setCategory('series')}>
-                            Series
+                            Shows
                         </Header.Link>
                         <Header.Link 
                             active={category === 'films' ? 'true' : 'false'}
                             onClick={() => setCategory('films')}>
-                            Films
+                            Movies
                         </Header.Link>
                     </Header.Group>
                     <Header.Group>
@@ -92,6 +92,9 @@ export function BrowseContainer({slides}) {
                                 </Card.Item>
                             ))}
                         </Card.Entities>
+                        <Card.Feature>
+                            <p>I am the feature!</p>
+                        </Card.Feature>
                     </Card>
                 ))}
             </Card.Group>
