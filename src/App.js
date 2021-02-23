@@ -11,21 +11,21 @@ export function App() {
   return ( 
     <Router>
       <Switch>
-        <isUserRedirect user={user} loggedInPath={ROUTES.BROWSE} path={ROUTES.SIGN_IN}>
+        <IsUserRedirect user={user} loggedInPath={ROUTES.BROWSE} path={ROUTES.SIGN_IN}>
           <Signin/>
-        </isUserRedirect>
+        </IsUserRedirect>
 
-        <isUserRedirect user={user} loggedInPath={ROUTES.BROWSE} path={ROUTES.SIGN_UP}>
+        <IsUserRedirect user={user} loggedInPath={ROUTES.BROWSE} path={ROUTES.SIGN_UP}>
           <Signup />
-        </isUserRedirect>
+        </IsUserRedirect>
         
         <ProtectedRoute user={user} path={ROUTES.BROWSE}>
           <Browse />
         </ProtectedRoute>
         
-        <isUserRedirect user={user} loggedInPath={ROUTES.BROWSE} path={ROUTES.HOME}>
+        <IsUserRedirect user={user} loggedInPath={ROUTES.BROWSE} path={ROUTES.HOME}>
           <Home/>
-        </isUserRedirect>
+        </IsUserRedirect>
       </Switch>
 
     </Router>
