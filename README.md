@@ -17,7 +17,7 @@ This was my first time getting my hands dirty with Compound Component design pat
 - Home page
 - Sign in/ Sign up page (utilizing firebase)
 - Profile component to click on your profile (the user is actually hard-coded in as an object.
-- Browse page (w/ a video player)
+- Browse page (w/ a video player*)
 
 ## Running this locally
 Clone/download file, npm install (or yarn install) to install all the dependencies
@@ -26,6 +26,7 @@ Clone/download file, npm install (or yarn install) to install all the dependenci
 - update the profile picker component:
   - currently this profile picker is hardcoded (as a user object, with hardcoded user name)
   - Need to use signed up user info (getting it back from firebase)
+  - the video is also from my own file. Connect to an api? (TMDB?)
   - set up a favorite icon for users to favorite (or like) some movies
 
 - Build my own unique movie website! 
