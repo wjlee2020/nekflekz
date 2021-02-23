@@ -4,7 +4,7 @@ import 'normalize.css';
 import {App} from './App';
 import {GlobalStyles} from './global-styles';
 import {FirebaseContext} from './context/firebase';
-import { seedDatabase } from './seed'
+// import { seedDatabase } from './seed'
 
 const config = {
   apiKey: "AIzaSyCG1dKKmo2YZ2Vt5fUXGDmA7nQ2oLLKkMU",
