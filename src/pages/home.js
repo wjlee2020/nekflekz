@@ -10,7 +10,7 @@ export default function Home() {
         <>
             <HeaderContainer>
                 <Feature>
-                    <Feature.Title>Unliminted movies, TV shows, and anime.</Feature.Title>
+                    <Feature.Title>Unlimited movies, TV shows, and anime.</Feature.Title>
                     <Feature.SubTitle>Watch anywhere. Cancel anytime</Feature.SubTitle>
                     <OptForm>
                         <OptForm.Text>Ready to watch? Enter your email to create or restart your membership.</OptForm.Text>
