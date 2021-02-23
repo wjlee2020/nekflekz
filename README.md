@@ -20,7 +20,7 @@ This was my first time getting my hands dirty with Compound Component design pat
 - Browse page (w/ a video player)
 
 ## Running this locally
-Clone/download file, npm install to install all the dependencies
+Clone/download file, npm install (or yarn install) to install all the dependencies
 
 ### What I can do now
 - update the profile picker component:
