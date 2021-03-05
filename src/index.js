@@ -7,12 +7,12 @@ import {FirebaseContext} from './context/firebase';
 // import { seedDatabase } from './seed'
 
 const config = {
-  apiKey: "AIzaSyCG1dKKmo2YZ2Vt5fUXGDmA7nQ2oLLKkMU",
+  apiKey: "GET YOUR OWN",
   authDomain: "nekflekz.firebaseapp.com",
   projectId: "nekflekz",
   storageBucket: "nekflekz.appspot.com",
-  messagingSenderId: "19233522750",
-  appId: "1:19233522750:web:061553ab0e9c29a86efd6f"
+  messagingSenderId: ">>>>>><<<<<<",
+  appId: "NOT ALLOWED, BUT YOU COULD STILL FIND IT"
 }
 
 const firebase = window.firebase.initializeApp(config);
