@@ -1,5 +1,6 @@
 # Nekflekz
 A Frontend Netflix clone project. nekflekz.netlify.app
+
 I decided on this clone as I thought it was a nice way to learn the following tools used:
 
 ## Tools
